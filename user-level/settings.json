@@ -1,3 +1,7 @@
 {
-  "autoMemoryEnabled": true
+  "autoMemoryEnabled": true,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  }
 }
