@@ -1,16 +1,19 @@
 # Claude Blueprint
 
-Mein persoenliches Claude Code Setup fuer alle Projekte. Einmal klonen, `init.sh` ausfuehren, loslegen.
+> Persoenliches Claude Code Setup — Skills, Agents, Hooks & Rules als wiederverwendbares `.claude/`-Verzeichnis fuer alle Projekte.
+
+Einmal klonen, `init.sh` ausfuehren, loslegen. Updates kommen per `git pull` in alle Projekte gleichzeitig.
+
+---
 
 ## Quick Start
 
 ```bash
 # 1. Neues Projekt anlegen
-mkdir MeinProjekt
-cd MeinProjekt
+mkdir MeinProjekt && cd MeinProjekt
 
 # 2. Blueprint als .claude/ klonen
-git clone git@github.com:DEIN-USERNAME/claude-blueprint.git .claude
+git clone git@github.com:herbeckrobin/claude-blueprint.git .claude
 
 # 3. Projekt initialisieren
 .claude/init.sh
@@ -21,20 +24,22 @@ git clone <dein-code-repo> .
 # oder: git init
 ```
 
+---
+
 ## Was ist drin?
 
 ### Skills (Slash-Commands)
 
-| Skill | Befehl | Beschreibung |
-|-------|--------|-------------|
-| Plan | `/plan` | Strukturierte Planung vor Implementierung |
-| Review | `/review` | Code-Review der letzten Aenderungen |
-| Security Audit | `/security-audit` | OWASP, Secrets, DSGVO Check |
-| Verify | `/verify` | Build, Tests, Integritaetspruefung |
-| Bugfix | `/bugfix` | Systematisches Debugging |
-| Research | `/research` | Tiefe Recherche (Code + Web) |
-| Document | `/document` | Dokumentation erstellen/aktualisieren |
-| Improve | `/improve` | Self-Improvement Loop |
+| Befehl | Beschreibung |
+|--------|-------------|
+| `/plan` | Strukturierte Planung vor Implementierung |
+| `/review` | Code-Review der letzten Aenderungen |
+| `/security-audit` | OWASP, Secrets, DSGVO Check |
+| `/verify` | Build, Tests, Integritaetspruefung |
+| `/bugfix` | Systematisches Debugging |
+| `/research` | Tiefe Recherche (Code + Web) |
+| `/document` | Dokumentation erstellen/aktualisieren |
+| `/improve` | Self-Improvement Loop |
 
 ### Agents (Subagents)
 
@@ -50,14 +55,16 @@ git clone <dein-code-repo> .
 | Hook | Event | Beschreibung |
 |------|-------|-------------|
 | `protect-files.sh` | PreToolUse | Blockiert Edit/Write auf sensible Dateien |
-| `notify-macos.sh` | Notification | macOS-Benachrichtigung |
+| `notify-macos.sh` | Notification | macOS-Benachrichtigung bei Abschluss |
 
 ### Rules
 
 | Rule | Scope | Beschreibung |
 |------|-------|-------------|
-| `security.md` | Code-Dateien | Security-Best-Practices |
-| `git-workflow.md` | Git-Operationen | Commit-Regeln |
+| `security.md` | Code-Dateien | Security-Best-Practices (OWASP, DSGVO) |
+| `git-workflow.md` | Git-Operationen | Commit-Konventionen |
+
+---
 
 ## Projektstruktur nach init.sh
 
@@ -78,19 +85,41 @@ MeinProjekt/
 └── Code/             ← Dein Code-Repository
 ```
 
+---
+
 ## Updates
 
 ```bash
-cd MeinProjekt/.claude
-git pull
+cd MeinProjekt/.claude && git pull
 ```
 
-Neue Skills, Agents, Verbesserungen sind sofort in allen Projekten aktiv.
+Neue Skills, Agents und Verbesserungen sind sofort in allen Projekten aktiv.
+
+---
 
 ## User-Level Config
 
 Beim ersten `init.sh` wird optional installiert:
-- `~/.claude/CLAUDE.md` — Persoenliche Praeferenzen (Sprache, Arbeitsweise)
-- `~/.claude/settings.json` — Auto-Memory aktivieren
 
-Diese gelten fuer ALLE Projekte, nicht nur das aktuelle.
+| Datei | Beschreibung |
+|-------|-------------|
+| `~/.claude/CLAUDE.md` | Persoenliche Praeferenzen (Sprache, Arbeitsweise) |
+| `~/.claude/settings.json` | Auto-Memory aktivieren |
+
+Diese gelten fuer **alle** Projekte, nicht nur das aktuelle.
+
+---
+
+## Philosophie
+
+- **Unternehmerisch mitdenken** — nicht nur Code schreiben, sondern Geschaeftsziele verstehen
+- **Planen vor Ausfuehren** — Plan-Mode bei komplexen Aufgaben
+- **Verifizieren nach jeder Aenderung** — Tests, Security, Build
+- **Self-Improvement** — aus jedem Projekt lernen (Auto-Memory)
+- **DSGVO by Default** — keine externen Fonts/CDNs, Datensparsamkeit
+
+---
+
+## Lizenz
+
+Privates Setup-Repo. Nutzung auf eigene Verantwortung.
