@@ -63,6 +63,7 @@ git clone <dein-code-repo> .
 |------|-------|-------------|
 | `security.md` | Code-Dateien | Security-Best-Practices (OWASP, DSGVO) |
 | `git-workflow.md` | Git-Operationen | Commit-Konventionen |
+| `frontend-design.md` | Frontend-Dateien | Anti-Slop Design-Regeln und aktuelle Trends |
 
 ---
 
