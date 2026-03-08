@@ -144,8 +144,9 @@ Nutze den `/review` Skill nach jedem groesseren Code-Block automatisch.
 - Keine offensichtlichen Kommentare
 
 **Commit-Messages:**
-- Deutsch, aussagekraeftig
+- Deutsch, kurz und einzeilig — keine langen Beschreibungen oder Aufzaehlungen
 - Imperativ: "Fuege X hinzu" statt "X hinzugefuegt"
+- NIEMALS `Co-Authored-By` oder andere AI-Author-Markierungen hinzufuegen
 - Nur geaenderte Dateien stagen (kein `git add -A`)
 
 ---
