@@ -1,5 +1,5 @@
 ---
-globs: ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.php", "**/*.py"]
+paths: ["**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.php", "**/*.py"]
 ---
 
 # Security Rules

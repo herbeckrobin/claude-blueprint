@@ -1,5 +1,5 @@
 ---
-globs: ["**/*.html", "**/*.php", "**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.twig", "**/*.blade.php", "**/*.vue", "**/*.astro", "**/*.svelte", "**/*.css", "**/*.scss"]
+paths: ["**/*.html", "**/*.php", "**/*.js", "**/*.ts", "**/*.jsx", "**/*.tsx", "**/*.twig", "**/*.blade.php", "**/*.vue", "**/*.astro", "**/*.svelte", "**/*.css", "**/*.scss"]
 ---
 
 # Rechtliche Compliance — Deutsche Webprojekte

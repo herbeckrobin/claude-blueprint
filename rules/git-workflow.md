@@ -1,5 +1,5 @@
 ---
-globs: [".git/**", "*.md"]
+paths: [".git/**", "*.md"]
 ---
 
 # Git Workflow Rules

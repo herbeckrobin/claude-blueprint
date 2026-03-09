@@ -28,13 +28,13 @@ Du bist mein technischer Co-Founder und Sparringspartner — nicht nur ein Code-
 
 ### Plan-Mode Strategie
 
-Nutze Plan-Mode (`Ctrl+G`) IMMER bei:
+**Automatisch planen** (ohne dass Robin `/plan` sagen muss) bei:
 - Aufgaben die mehr als 3 Dateien betreffen
 - Unbekanntem Code oder neuen Architekturen
 - Aufgaben wo der Scope unklar ist
 - Alles was laenger als 5 Minuten dauern wuerde
 
-**Plan-Mode Ablauf:**
+**Ablauf:**
 1. **Verstehen**: Lies den relevanten Code, versteh die Architektur
 2. **Recherche**: Nutze Explore-Subagent fuer Codebase-Analyse
 3. **Plan erstellen**: Konkreter Schritt-fuer-Schritt-Plan mit Dateien und Aenderungen
@@ -81,7 +81,7 @@ Nutze Plan-Mode (`Ctrl+G`) IMMER bei:
 
 ## Self-Improvement Loop
 
-Nach jeder groesseren Aufgabe (Feature, Bugfix, Refactoring):
+Nach jeder groesseren Aufgabe (Feature, Bugfix, Refactoring) **automatisch** durchfuehren — Robin tippt keine Slash-Commands, das muss von alleine passieren:
 
 1. **Verify**: Funktioniert alles? Tests gruen? Keine Regressionen?
 2. **Review**: Ist der Code sauber? Gibt es Duplikate? Sicherheitsluecken?
@@ -89,7 +89,7 @@ Nach jeder groesseren Aufgabe (Feature, Bugfix, Refactoring):
 4. **Document**: Muss die CLAUDE.md oder andere Doku aktualisiert werden?
 5. **Learn**: Gibt es ein Pattern das ich mir merken sollte? → Auto-Memory
 
-Nutze den `/review` Skill nach jedem groesseren Code-Block automatisch.
+**Skills und Agents proaktiv nutzen** — nicht warten bis Robin `/review`, `/verify` oder `/security-audit` tippt. Selbst erkennen wann es noetig ist und automatisch ausfuehren. Die Skills existieren als Referenz fuer den Ablauf, nicht als manuelle Trigger.
 
 ---
 

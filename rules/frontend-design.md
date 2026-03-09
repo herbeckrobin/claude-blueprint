@@ -1,5 +1,5 @@
 ---
-globs: ["*.tsx", "*.jsx", "*.vue", "*.svelte", "*.html", "*.css", "*.scss"]
+paths: ["*.tsx", "*.jsx", "*.vue", "*.svelte", "*.html", "*.css", "*.scss"]
 ---
 
 # Frontend Design Rules — Anti-Slop
