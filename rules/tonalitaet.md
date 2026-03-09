@@ -10,6 +10,13 @@ description: "Wird geladen bei Kundenkommunikation (Mails, Angebote, Updates)"
 
 ---
 
+## Umlaute
+
+- **Echte Umlaute verwenden:** ä, ö, ü, ß — NICHT ae, oe, ue, ss
+- Robin schreibt "Rückmeldung", "für", "gemäß", "Grüße" — nicht "Rueckmeldung", "fuer", "gemaess", "Gruesse"
+- Das gilt fuer alle Kundenkommunikation (Mails, Angebote, Updates)
+- Ausnahme: Technische Kontexte wo ASCII noetig ist (URLs, Dateinamen, Code)
+
 ## Grundton
 
 - **Locker-kollegial** mit professionellem Unterton
@@ -33,6 +40,13 @@ description: "Wird geladen bei Kundenkommunikation (Mails, Angebote, Updates)"
 - "heisst" als Ueberleitung: "Ich hab X gemacht, heisst fuer dich..."
 - Relativsaetze oft ohne "dass": "Ich denke ich fange diese Woche noch an"
 - Klammern fuer technische Praezisierungen: "(Bildkomprimierung, CSS/JS-Minification)"
+
+## Namen und Wiederholungen
+
+- **Volle Vornamen** im Fliesstext verwenden, nicht abkuerzen: "Alexandra" statt "Alex"
+- **Spitznamen** nur wenn der Kunde sie selbst verwendet (z.B. "Matze" in der Anrede, weil Matthias sich so vorstellt)
+- Namen nicht unnoetig wiederholen wenn der Kontext klar ist: "warte ich auf die Textfreigabe" statt "warte ich auf die Textfreigabe von Alexandra"
+- Wenn ein Problem bereits behoben ist: Vergangenheitsform verwenden ("die fehlten noch", "das hab ich gehabt"), nicht Gegenwartsform
 
 ## Typische Formulierungen
 
