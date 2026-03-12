@@ -131,6 +131,22 @@ Nach jeder groesseren Aufgabe (Feature, Bugfix, Refactoring) **automatisch** dur
 
 ---
 
+## SEO & Structured Data
+
+**Bei jeder neuen Seite pruefen:**
+- Ist ein JSON-LD Schema vorhanden? Wenn nicht, proaktiv vorschlagen und einbauen
+- Passenden Schema-Typ waehlen (WebPage, Service, CreativeWork, Article, FAQPage, etc.)
+- `@id`-System nutzen fuer Verknuepfungen zwischen Schemas (z.B. `#person`, `#website`, `#webpage`)
+- Neue Schemas per `@id`-Referenz verknuepfen statt Daten zu duplizieren
+- Pflichtfelder: name, description, url, author/provider, inLanguage
+- Optionale Felder je nach Typ: image, dateCreated, keywords, offers, areaServed
+
+**Bei Unsicherheit ueber Schema-Typ oder Felder:** Nachfragen statt raten.
+
+**Warum:** JSON-LD ist Googles bevorzugtes Structured Data Format. Ohne JSON-LD fehlen Rich Snippets, Knowledge Graph Eintraege und AI-Sichtbarkeit.
+
+---
+
 ## Dokumentation
 
 **CLAUDE.md aktuell halten:**
